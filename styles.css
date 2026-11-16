@@ -56,7 +56,7 @@
 .honors-badge>span{font-size:12px}
 
 /* Burgundy, cream and dusty rose palette. */
-.site-header{border-bottom-color:var(--wine)}
+.site-header{border-bottom-color:var(--wine);justify-content:flex-end}
 .hero h1,.experience-section .section-title,.certificates-section .section-title{color:var(--wine)}
 .outline-star{color:var(--rose)}
 .portrait-label{background:var(--paper);color:var(--wine);box-shadow:6px 6px 0 var(--wine)}
