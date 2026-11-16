@@ -56,7 +56,9 @@
 .honors-badge>span{font-size:12px}
 
 /* Burgundy, cream and dusty rose palette. */
-.site-header{border-bottom-color:var(--wine);justify-content:flex-end}
+.site-header{border-bottom-color:var(--wine);justify-content:space-between}
+.header-brand{display:inline-flex;align-items:center;color:var(--wine);font-size:16px;font-weight:850;font-style:italic;letter-spacing:-.4px;line-height:1.2;white-space:nowrap}
+@media(max-width:600px){.hero .last-word{gap:clamp(16px,5vw,24px)}}
 .hero h1,.experience-section .section-title,.certificates-section .section-title{color:var(--wine)}
 .outline-star{color:var(--rose)}
 .portrait-label{background:var(--paper);color:var(--wine);box-shadow:6px 6px 0 var(--wine)}
