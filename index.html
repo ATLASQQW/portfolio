@@ -16,6 +16,7 @@
   <link rel="preload" href="assets/portrait-stylized-dark-v5.png" as="image">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
+  <script src="holidays.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержанию</a>
@@ -83,6 +84,38 @@
             <div class="project-caption"><h3>КМиКГ</h3><span>AFTER EFFECTS</span></div>
             <p>Презентационный ролик об учебных направлениях.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="holiday-section section" id="holidays" aria-labelledby="holiday-title">
+      <div class="wrap">
+        <div class="holiday-heading">
+          <p class="eyebrow">AFTER EFFECTS / СЕРИЯ РАБОТ</p>
+          <h2 class="holiday-title" id="holiday-title">Анимированные<br>поздравления</h2>
+          <p class="holiday-intro">Серия из 7 праздничных роликов.</p>
+        </div>
+        <div class="holiday-layout">
+          <figure class="holiday-player">
+            <video id="holiday-video" class="holiday-video" controls playsinline preload="none" poster="assets/holidays/new-year-poster.webp" src="assets/holidays/new-year.mp4" aria-label="Анимированное поздравление: Новый год">
+              Ваш браузер не поддерживает видео. <a href="assets/holidays/new-year.mp4">Открыть поздравление «Новый год»</a>.
+            </video>
+            <figcaption class="holiday-caption"><h3 id="holiday-current-title">Новый год</h3><span>10 секунд · After Effects</span></figcaption>
+            <p class="holiday-error" id="holiday-error" hidden>Не удалось загрузить видео. <a id="holiday-file-link" href="assets/holidays/new-year.mp4" target="_blank" rel="noopener">Открыть ролик отдельно ↗</a></p>
+          </figure>
+          <aside class="holiday-playlist" aria-labelledby="holiday-playlist-title">
+            <div class="holiday-playlist-heading"><h3 id="holiday-playlist-title">Выбери праздник</h3><span id="holiday-index">01 / 07</span></div>
+            <ol class="holiday-options">
+              <li><a class="holiday-option is-active" href="assets/holidays/new-year.mp4" data-holiday="new-year" aria-controls="holiday-video" aria-current="true"><img src="assets/holidays/new-year-poster.webp" width="480" height="480" alt="" loading="lazy"><span class="holiday-option-number" aria-hidden="true">01</span><span class="holiday-option-title">Новый год</span><span class="holiday-option-arrow" aria-hidden="true">↗</span></a></li>
+              <li><a class="holiday-option" href="assets/holidays/february23.mp4" data-holiday="february23" aria-controls="holiday-video"><img src="assets/holidays/february23-poster.webp" width="480" height="480" alt="" loading="lazy"><span class="holiday-option-number" aria-hidden="true">02</span><span class="holiday-option-title">23 февраля</span><span class="holiday-option-arrow" aria-hidden="true">↗</span></a></li>
+              <li><a class="holiday-option" href="assets/holidays/march8.mp4" data-holiday="march8" aria-controls="holiday-video"><img src="assets/holidays/march8-poster.webp" width="480" height="480" alt="" loading="lazy"><span class="holiday-option-number" aria-hidden="true">03</span><span class="holiday-option-title">8 Марта</span><span class="holiday-option-arrow" aria-hidden="true">↗</span></a></li>
+              <li><a class="holiday-option" href="assets/holidays/victory.mp4" data-holiday="victory" aria-controls="holiday-video"><img src="assets/holidays/victory-poster.webp" width="480" height="480" alt="" loading="lazy"><span class="holiday-option-number" aria-hidden="true">04</span><span class="holiday-option-title">День Победы</span><span class="holiday-option-arrow" aria-hidden="true">↗</span></a></li>
+              <li><a class="holiday-option" href="assets/holidays/knowledge.mp4" data-holiday="knowledge" aria-controls="holiday-video"><img src="assets/holidays/knowledge-poster.webp" width="480" height="480" alt="" loading="lazy"><span class="holiday-option-number" aria-hidden="true">05</span><span class="holiday-option-title">День знаний</span><span class="holiday-option-arrow" aria-hidden="true">↗</span></a></li>
+              <li><a class="holiday-option" href="assets/holidays/forest.mp4" data-holiday="forest" aria-controls="holiday-video"><img src="assets/holidays/forest-poster.webp" width="480" height="480" alt="" loading="lazy"><span class="holiday-option-number" aria-hidden="true">06</span><span class="holiday-option-title">День работника леса</span><span class="holiday-option-arrow" aria-hidden="true">↗</span></a></li>
+              <li><a class="holiday-option" href="assets/holidays/teacher.mp4" data-holiday="teacher" aria-controls="holiday-video"><img src="assets/holidays/teacher-poster.webp" width="480" height="480" alt="" loading="lazy"><span class="holiday-option-number" aria-hidden="true">07</span><span class="holiday-option-title">День преподавателя</span><span class="holiday-option-arrow" aria-hidden="true">↗</span></a></li>
+            </ol>
+            <p class="holiday-announcement" id="holiday-announcement" role="status" aria-live="polite"></p>
+          </aside>
         </div>
       </div>
     </section>
